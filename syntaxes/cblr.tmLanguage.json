@@ -4,7 +4,22 @@
   "scopeName": "source.cblr",
   "patterns": [
     {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
       "include": "#keywords"
+    },
+    {
+      "include": "#types"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#numbers"
     },
     {
       "include": "#operators"
@@ -13,16 +28,7 @@
       "include": "#punctuation"
     },
     {
-      "include": "#numbers"
-    },
-    {
-      "include": "#strings"
-    },
-    {
       "include": "#identifiers"
-    },
-    {
-      "include": "#comments"
     }
   ],
   "repository": {
@@ -151,6 +157,14 @@
           "name": "comment.block.cblr",
           "begin": "/\\*",
           "end": "\\*/"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()",
+          "name": "entity.name.function.cblr"
         }
       ]
     }
