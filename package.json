@@ -3,6 +3,11 @@
   "displayName": "CobblrSyntaxHighlighting",
   "description": "Fully featured syntax highlighting for my custom language Cobblr, based on rust, haskell/ocaml, and some c# isms.",
   "version": "0.0.1",
+  "publisher": "Kenneth-Chase-Harmer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SaffronG/CobblrSH.git"
+  },
   "engines": {
     "vscode": "^1.109.0"
   },
