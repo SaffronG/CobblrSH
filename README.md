@@ -39,7 +39,7 @@ Initial release of CobblrSH
 
 Since Cobblr is currently in active development and not yet on the VS Code Marketplace, you can install the extension manually using the **VSIX** method—it's the cleanest way to get up and running.
 
-1. **Download** the `.vsix` file from the [Releases](your-github-link-here) page.
+1. **Download** the `.vsix` file from the [Releases](https://github.com/SaffronG/CobblrSH/releases/tag/v1.0.0) page.
 2. Open **Visual Studio Code**.
 3. Open the **Extensions** view (click the Extensions icon on the left or press `Ctrl+Shift+X`).
 4. Click the **`...`** (More Actions) menu in the top-right corner of the Extensions pane.
