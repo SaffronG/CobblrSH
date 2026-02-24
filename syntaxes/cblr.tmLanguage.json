@@ -3,12 +3,27 @@
   "name": "Cobblr",
   "scopeName": "source.cblr",
   "patterns": [
-    { "include": "#keywords" },
-    { "include": "#operators" },
-    { "include": "#punctuation" },
-    { "include": "#numbers" },
-    { "include": "#strings" },
-    { "include": "#identifiers" }
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#punctuation"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#identifiers"
+    },
+    {
+      "include": "#comments"
+    }
   ],
   "repository": {
     "keywords": {
@@ -65,11 +80,26 @@
     },
     "punctuation": {
       "patterns": [
-        { "name": "punctuation.terminator.cblr", "match": ";" },
-        { "name": "punctuation.separator.cblr", "match": ",|:" },
-        { "name": "punctuation.section.parens.cblr", "match": "\\(|\\)" },
-        { "name": "punctuation.section.braces.cblr", "match": "\\{|\\}" },
-        { "name": "punctuation.section.brackets.cblr", "match": "\\[|\\]" }
+        {
+          "name": "punctuation.terminator.cblr",
+          "match": ";"
+        },
+        {
+          "name": "punctuation.separator.cblr",
+          "match": ",|:"
+        },
+        {
+          "name": "punctuation.section.parens.cblr",
+          "match": "\\(|\\)"
+        },
+        {
+          "name": "punctuation.section.braces.cblr",
+          "match": "\\{|\\}"
+        },
+        {
+          "name": "punctuation.section.brackets.cblr",
+          "match": "\\[|\\]"
+        }
       ]
     },
     "numbers": {
@@ -95,11 +125,32 @@
         }
       ]
     },
+    "types": {
+      "patterns": [
+        {
+          "name": "storage.type.cblr",
+          "match": "\\b(int|float|string|bool|char|void|Self|i32|u32|f64)\\b"
+        }
+      ]
+    },
     "identifiers": {
       "patterns": [
         {
           "name": "variable.other.cblr",
           "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.cblr",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.cblr",
+          "begin": "/\\*",
+          "end": "\\*/"
         }
       ]
     }
