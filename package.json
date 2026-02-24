@@ -1,0 +1,25 @@
+{
+  "name": "CobblrSH",
+  "displayName": "CobblrSyntaxHighlighting",
+  "description": "Fully featured syntax highlighting for my custom language Cobblr, based on rust, haskell/ocaml, and some c# isms.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cblr",
+      "aliases": ["Cobblr", "cblr"],
+      "extensions": [".cblr",".cobblr"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cblr",
+      "scopeName": "source.cobbblr",
+      "path": "./syntaxes/cblr.tmLanguage.json"
+    }]
+  }
+}

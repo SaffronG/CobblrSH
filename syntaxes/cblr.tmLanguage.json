@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Cobblr",
+  "scopeName": "source.cblr",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#operators" },
+    { "include": "#punctuation" },
+    { "include": "#numbers" },
+    { "include": "#strings" },
+    { "include": "#identifiers" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.cblr",
+          "match": "\\b(if|else|while|for|loop|return|break|continue|end)\\b"
+        },
+        {
+          "name": "keyword.declaration.cblr",
+          "match": "\\b(let|mut|fn|struct|enum|impl|trait|use|import|as|in)\\b"
+        },
+        {
+          "name": "keyword.threading.cblr",
+          "match": "\\b(async|await)\\b"
+        },
+        {
+          "name": "keyword.expressions.cblr",
+          "match": "\\b(match|some|none|Ok|Err|true|false)\\b"
+        },
+        {
+          "name": "keyword.other.special.cblr",
+          "match": "#derive"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.logical.cblr",
+          "match": "&&|\\|\\||!"
+        },
+        {
+          "name": "keyword.operator.comparison.cblr",
+          "match": "==|!=|<=|>=|<|>"
+        },
+        {
+          "name": "keyword.operator.assignment.cblr",
+          "match": "="
+        },
+        {
+          "name": "keyword.operator.arithmetic.cblr",
+          "match": "\\+\\+|\\+|\\-|\\*|/"
+        },
+        {
+          "name": "keyword.operator.functional.cblr",
+          "match": "\\|>|->|<-|=>"
+        },
+        {
+          "name": "keyword.operator.misc.cblr",
+          "match": "::|\\.\\.|\\.|\\||\\^"
+        }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        { "name": "punctuation.terminator.cblr", "match": ";" },
+        { "name": "punctuation.separator.cblr", "match": ",|:" },
+        { "name": "punctuation.section.parens.cblr", "match": "\\(|\\)" },
+        { "name": "punctuation.section.braces.cblr", "match": "\\{|\\}" },
+        { "name": "punctuation.section.brackets.cblr", "match": "\\[|\\]" }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.float.cblr",
+          "match": "\\b[0-9]+\\.[0-9]+\\b"
+        },
+        {
+          "name": "constant.numeric.integer.cblr",
+          "match": "\\b[0-9]+\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.cblr",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.cblr",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "identifiers": {
+      "patterns": [
+        {
+          "name": "variable.other.cblr",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}
