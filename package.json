@@ -2,7 +2,7 @@
   "name": "CobblrSH",
   "displayName": "CobblrSyntaxHighlighting",
   "description": "Fully featured syntax highlighting for my custom language Cobblr, based on rust, haskell/ocaml, and some c# isms.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "Kenneth-Chase-Harmer",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     }],
     "grammars": [{
       "language": "cblr",
-      "scopeName": "source.cobbblr",
+      "scopeName": "source.cblr",
       "path": "./syntaxes/cblr.tmLanguage.json"
     }]
   }
